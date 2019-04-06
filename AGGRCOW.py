@@ -2,12 +2,13 @@ def F(X, N, C, val):
     prev = 0
     consumedC = 1
     for i in range(1, N):
-        if(X[i]-X[prev]>=val):
+        if(X[i]-X[prev] >= val):
             prev = i
             consumedC += 1
-            if(consumedC>=C):
-              return True
+            if(consumedC >= C):
+                return True
     return False
+
 
 T = int(input())
 for _ in range(T):
@@ -21,7 +22,7 @@ for _ in range(T):
     end = X[N-1]
     start = 0
 
-    while(end>=start):
+    while(end >= start):
         mid = (start + end)//2
         if(F(X, N, C, mid)):
             start = mid + 1
