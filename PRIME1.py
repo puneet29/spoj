@@ -1,42 +1,24 @@
-def checkPrime(num):
-    if(num <= 1):
-        return False
-    if(num <= 3):
-        return True
-    for i in range(5, int(num**(1/2)), 6):
-        if(num % i == 0 or num % i+2 == 0):
-            return False
-    return True
-
-
 T = int(input())
 for _ in range(T):
     l, u = map(int, input().split())
-    X = []
-    S = []
+    composites = {}
 
-    for i in range(u+1):
-        X.append(i)
-        if((i % 2 == 0 or i % 3 == 0) and i > 3):
-            S.append(False)
+    for i in range(2, u+1):
+        if(i in composites):
+            # This is a composite number
+            for prime in composites[i]:
+                if(prime+i in composites):
+                    # Append the prime number to next multiple
+                    composites[prime+i] += [prime]
+                else:
+                    # Add the prime number to next multiple
+                    composites[prime+i] = [prime]
+            del(composites[i])
         else:
-            S.append(True)
-
-    for i in range(u+1):
-        if(S[i]):
-            if(not checkPrime(X[i])):
-                S[i] = False
-            # Adds to time complexity
-            # else:
-            #     if(i>=l):
-            #         print(X[i])
-            if(X[i] <= 1):
-                continue
-            for j in range(i+X[i], u+1, X[i]):
-                S[j] = False
-
-    for i in range(l, u+1):
-        if(S[i]):
-            print(X[i])
+            # This is a prime number
+            if(i >= l):
+                print(i)
+            # Adds prime number at first composite index of the composites
+            composites[i*i] = [i]
 
     print()
