@@ -27,7 +27,7 @@ for _ in range(T):
             if(not checkPrime(X[i])):
                 S[i] = False
             else:
-                if(i >= l and i <= u):
+                if(i >= l):
                     print(X[i])
             if(X[i] <= 1):
                 continue
