@@ -26,12 +26,17 @@ for _ in range(T):
         if(S[i]):
             if(not checkPrime(X[i])):
                 S[i] = False
-            else:
-                if(i >= l):
-                    print(X[i])
+            # Adds to time complexity
+            # else:
+            #     if(i>=l):
+            #         print(X[i])
             if(X[i] <= 1):
                 continue
             for j in range(i+X[i], u+1, X[i]):
                 S[j] = False
+
+    for i in range(l, u+1):
+        if(S[i]):
+            print(X[i])
 
     print()
