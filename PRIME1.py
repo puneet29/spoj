@@ -15,23 +15,23 @@ for _ in range(T):
     X = []
     S = []
 
-    for i in range(l, u+1):
+    for i in range(u+1):
         X.append(i)
         if((i % 2 == 0 or i % 3 == 0) and i > 3):
             S.append(False)
         else:
             S.append(True)
 
-    for i in range(u-l+1):
+    for i in range(u+1):
         if(S[i]):
             if(not checkPrime(X[i])):
                 S[i] = False
             if(X[i] <= 1):
                 continue
-            for j in range(i+X[i], u-l+1, X[i]):
+            for j in range(i+X[i], u+1, X[i]):
                 S[j] = False
 
-    for i in range(u-l+1):
+    for i in range(l, u+1):
         if(S[i]):
             print(X[i])
     print()
