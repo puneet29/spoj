@@ -5,7 +5,7 @@ Name | Status | Tags | Languages
 [ACODE](ACODE.py) | :heavy_check_mark: | `#dynamic-programming` | Python
 [ACPC10A](ACPC10A.py) | :heavy_check_mark: | *no tags* | Python
 [ADDREV](ADDREV.py) | :heavy_check_mark: | `#simple-math` `#ad-hoc-1` | Python
-[AE00](AE00.cpp) | :heavy_check_mark: | `#ad-hoc-1` | Python
+[AE00](AE00.py) | :heavy_check_mark: | `#ad-hoc-1` | Python
 [AGGRCOW](AGGRCOW.py) | :heavy_check_mark: | `#binary-search` | Python
 [BYTESM2](BYTESM2.cpp) | :heavy_check_mark: | `#dynamic-programming` | [Python](BYTESM2.py), [C++](BYTESM2.cpp)
 [CANDY](CANDY.py) | :heavy_check_mark: | `#ad-hoc-1` | Python
