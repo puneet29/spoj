@@ -1,22 +1,22 @@
-import sys
+def palindrome(A, low, size):
+    MAT = [[0 for j in range(size)] for i in range(size)]
+    i = 0
+    diff = 1
+    while(diff <= size - 1):
+        j = i + diff
+        if(A[i] == A[j]):
+            MAT[i][j] = MAT[i+1][j-1]
+        else:
+            MAT[i][j] = min(MAT[i][j-1], MAT[i+1][j]) + 1
 
-
-def palindrome(A, low, up):
-    # base cases
-    if(low > up):
-        return(sys.maxsize)
-    if(low == up):
-        return(0)
-    if(low == up - 1):
-        return 0 if (A[low] == A[up]) else 1
-
-    # Check if first and last char are equal
-    if(A[low] == A[up]):
-        return(palindrome(A, low + 1, up - 1))
-    else:
-        return(min(palindrome(A, low, up - 1), palindrome(A, low + 1, up)) + 1)
+        if(j == size - 1):
+            i = 0
+            diff += 1
+        else:
+            i += 1
+    return(MAT[0][size-1])
 
 
 for _ in range(int(input())):
     S = str(input())
-    print(palindrome(S, 0, len(S)-1))
+    print(palindrome(S, 0, len(S)))
