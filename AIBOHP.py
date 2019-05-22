@@ -1,4 +1,4 @@
-def palindrome(A, low, size):
+def palindrome(A, size):
     MAT = [[0 for j in range(size)] for i in range(size)]
     i = 0
     diff = 1
@@ -19,4 +19,4 @@ def palindrome(A, low, size):
 
 for _ in range(int(input())):
     S = str(input())
-    print(palindrome(S, 0, len(S)))
+    print(palindrome(S, len(S)))
