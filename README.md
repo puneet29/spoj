@@ -7,7 +7,7 @@ Name | Status | Tags | Languages
 [ADDREV](ADDREV.py) | :heavy_check_mark: | `#simple-math` `#ad-hoc-1` | Python
 [AE00](AE00.py) | :heavy_check_mark: | `#ad-hoc-1` | Python
 [AGGRCOW](AGGRCOW.py) | :heavy_check_mark: | `#binary-search` | Python
-[AIBOHP](AIBOHP.py) | :rocket: | `#dynamic-programming` | Python
+[AIBOHP](AIBOHP.cpp) | :heavy_check_mark: | `#dynamic-programming` | [Python](AIBOHP.py), [C++](AIBOHP.cpp)
 [BYTESM2](BYTESM2.cpp) | :heavy_check_mark: | `#dynamic-programming` | [Python](BYTESM2.py), [C++](BYTESM2.cpp)
 [CANDY](CANDY.py) | :heavy_check_mark: | `#ad-hoc-1` | Python
 [COINS](COINS.py) | :heavy_check_mark: | `#dynamic-programming` | Python
