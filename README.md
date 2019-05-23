@@ -13,7 +13,7 @@ Name | Status | Tags | Languages
 [COINS](COINS.py) | :heavy_check_mark: | `#dynamic-programming` | Python
 [DOUGHNUT](DOUGHNUT.py) | :heavy_check_mark: | *no tags* | Python
 [FASHION](FASHION.py) | :heavy_check_mark: | `#ad-hoc-1` | Python
-[FCTRL](FCTRL.py) | :rocket: | `#math` | Python
+[FCTRL](FCTRL.py) | :heavy_check_mark: | `#math` | Python
 [FCTRL2](FCTRL2.py) | :heavy_check_mark: | `#math` `#big-numbers` | Python
 [NSTEPS](NSTEPS.py) | :heavy_check_mark: | `#ad-hoc-1` | Python
 [ONP](ONP.py) | :heavy_check_mark: | `#stack` | Python
